@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+p {
+  color: white; }
+
+.coordinates-panel {
+  position: fixed;
+  padding: 0.2rem;
+  background-color: darkcyan;
+  color: white; }
