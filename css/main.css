@@ -5,8 +5,18 @@ body {
 p {
   color: white; }
 
-.coordinates-panel {
-  position: fixed;
-  padding: 0.2rem;
+.images-container {
   background-color: darkcyan;
-  color: white; }
+  position: fixed;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, -50%);
+  display: flex; }
+
+/* .coordinates-panel {
+    position: fixed;
+    padding: 0.2rem;
+    background-color: darkcyan;
+    color: white;
+} */
