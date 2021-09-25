@@ -1,5 +1,4 @@
-
-    const imageContainerEl = document.querySelector('.images-container')
+const imageContainerEl = document.querySelector('.images-container')
 
 const sortComposersByBirthDate = inputArray => {
 
@@ -28,22 +27,24 @@ const animateImages = _ => {
 
     window.addEventListener('mousemove', event => {
 
-       
+
 
         imageContainerEl.style.left = window.innerWidth / 2 - event.clientX;
 
         [...imageAnimated].forEach(picture => {
 
             let imageCenter = [picture.getBoundingClientRect().x + picture.naturalWidth / 2, picture.getBoundingClientRect().y + picture.naturalHeight / 2];
-            
+
             // odległość X-Y
             // let distance = Math.round(Math.sqrt(Math.pow(event.clientX - imageCenter[0], 2) + Math.pow(event.clientY - imageCenter[1], 2)));
-            
-            //odległość X
-             let distanceX = Math.round(event.clientX - imageCenter[0]);
 
-             if (Math.abs(distanceX) > 200) {picture.width = Math.abs(picture.naturalWidth * 1/distanceX * 1000)}
-             
+            //odległość X
+            let distanceX = Math.round(event.clientX - imageCenter[0]);
+
+            if (Math.abs(distanceX) > 200) {
+                picture.width = Math.abs(picture.naturalWidth * 1 / distanceX * 1000)
+            }
+
         })
     })
 
